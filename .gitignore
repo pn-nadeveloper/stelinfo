@@ -1,3 +1,4 @@
 .git
 .npmignore
 test.js
+.gitignore

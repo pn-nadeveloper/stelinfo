@@ -1,9 +1,16 @@
 {
   "name": "stelinfo",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "스텔라이브 멤버 정보 API 라이브러리",
   "main": "index.js",
-  "keywords": ["stellive","stellar Info","스텔라이브","멤버 정보","Stelinfo","StelInfo"],
+  "keywords": [
+    "stellive",
+    "stellar Info",
+    "스텔라이브",
+    "멤버 정보",
+    "Stelinfo",
+    "StelInfo"
+  ],
   "author": "pn-nadeveloper",
   "license": "MIT",
   "type": "module"

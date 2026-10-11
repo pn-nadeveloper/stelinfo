@@ -186,6 +186,74 @@ const memberData = [
       Hex: "#A6D0A6",
     },
   },
+  {
+    Toa: {
+      Eng_name: "Shiuzuki Toa",
+      Kor_name: "시즈키 토아",
+      Short_name: "토아",
+      Age: "19세",
+      Birth_date: "11월 22일",
+      Height: "157cm",
+      MBTI: "",
+      Affiliation: "스텔라이브(4기 어비스)",
+      Species: "인간",
+      Fan_name: "",
+      Debut: "2026년 10월 17일",
+      Osimark: "",
+      Hex: "",
+    },
+  },
+  {
+    Rang: {
+      Eng_name: "Kogane Rang",
+      Kor_name: "코가네 랑",
+      Short_name: "랑",
+      Age: "500세",
+      Birth_date: "8월 22일",
+      Height: "145cm",
+      MBTI: "",
+      Affiliation: "스텔라이브(4기 어비스)",
+      Species: "호랑이",
+      Fan_name: "",
+      Debut: "2026년 10월 17일",
+      Osimark: "",
+      Hex: "",
+    },
+  },
+  {
+    Hiyori: {
+      Eng_name: "Hanayo Hiyori",
+      Kor_name: "하나요 히요리",
+      Short_name: "히요리",
+      Age: "1300세",
+      Birth_date: "3월 31일",
+      Height: "161cm",
+      MBTI: "",
+      Affiliation: "스텔라이브(4기 어비스)",
+      Species: "지박령",
+      Fan_name: "",
+      Debut: "2026년 10월 18일",
+      Osimark: "",
+      Hex: "",
+    },
+  },
+  {
+    Mary: {
+      Eng_name: "Tokino Mary",
+      Kor_name: "토키노 메리",
+      Short_name: "메리",
+      Age: "300세",
+      Birth_date: "6월 13일",
+      Height: "159cm",
+      MBTI: "",
+      Affiliation: "스텔라이브(4기 어비스)",
+      Species: "저주인형",
+      Fan_name: "",
+      Debut: "2026년 10월 18일",
+      Osimark: "",
+      Hex: "",
+    },
+  },
 ];
 
 export function Kanna($input) {
@@ -331,6 +399,57 @@ export function Riko($input) {
   return info;
 }
 
+export function Toa($input) {
+  if (!$input) {
+    console.error("토아의 정보를 조회하려면 조회할 항목을 입력해주세요.");
+    return null;
+  }
+  const info = memberData[11].Toa[$input];
+  if (!info) {
+    console.error(`토아의 ${$input} 정보를 찾을 수 없습니다.`);
+    return null;
+  }
+  return info;
+}
+
+export function Rang($input) {
+  if (!$input) {
+    console.error("랑의 정보를 조회하려면 조회할 항목을 입력해주세요.");
+    return null;
+  }
+  const info = memberData[12].Rang[$input];
+  if (!info) {
+    console.error(`랑의 ${$input} 정보를 찾을 수 없습니다.`);
+    return null;
+  }
+  return info;
+}
+
+export function Hiyori($input) {
+  if (!$input) {
+    console.error("히요리의 정보를 조회하려면 조회할 항목을 입력해주세요.");
+    return null;
+  }
+  const info = memberData[13].Hiyori[$input];
+  if (!info) {
+    console.error(`히요리의 ${$input} 정보를 찾을 수 없습니다.`);
+    return null;
+  }
+  return info;
+}
+
+export function Mary($input) {
+  if (!$input) {
+    console.error("메리의 정보를 조회하려면 조회할 항목을 입력해주세요.");
+    return null;
+  }
+  const info = memberData[14].Mary[$input];
+  if (!info) {
+    console.error(`메리의 ${$input} 정보를 찾을 수 없습니다.`);
+    return null;
+  }
+  return info;
+}
 export default {
   Kanna,
   Yuni,
@@ -343,4 +462,8 @@ export default {
   Rin,
   Nana,
   Riko,
+  Toa,
+  Rang,
+  Hiyori,
+  Mary,
 };

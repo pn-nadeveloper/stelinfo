@@ -1,6 +1,6 @@
 {
   "name": "stelinfo",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "스텔라이브 멤버 정보 API 라이브러리",
   "main": "index.js",
   "keywords": [

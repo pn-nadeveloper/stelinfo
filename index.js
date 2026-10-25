@@ -267,6 +267,7 @@ const memberData = [
       Debut: "2026년 10월 18일",
       Osimark: "🪡🧸",
       Hex: "#eed06f",
+      SUB_Hex: "#4f8c98",
     },
   },
 ];
